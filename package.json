@@ -1,15 +1,31 @@
 {
-  "version": "0.0.0",
   "type": "module",
+  "version": "0.0.0",
   "scripts": {
+    "prepare": "husky install"
   },
   "dependencies": {
     "vue": "^3.4.37"
   },
   "devDependencies": {
+    "@mistjs/eslint-config": "^1.0.0",
     "@vitejs/plugin-vue": "^5.1.2",
+    "eslint": "8.55.0",
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.9",
     "typescript": "^5.5.3",
     "vite": "^5.4.1",
     "vue-tsc": "^2.0.29"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "git add"
+    ]
   }
 }
