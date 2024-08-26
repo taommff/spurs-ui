@@ -6,9 +6,7 @@ title: 基础使用
 </docs>
 
 <script setup lang="ts">
-import { test } from '@spurs-ui/utils'
 
-test()
 </script>
 
 <template>
