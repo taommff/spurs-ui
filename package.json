@@ -5,17 +5,21 @@
     "prepare": "husky install",
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "docs:preview": "vitepress preview",
+    "genColors": "esno ./scripts/gen-colors.ts"
   },
   "dependencies": {
     "vue": "^3.4.37"
   },
   "devDependencies": {
+    "@ant-design/colors": "^7.1.0",
     "@mistjs/eslint-config": "^1.0.0",
     "@types/node": "^22.5.0",
     "@vitejs/plugin-vue": "^5.1.2",
     "eslint": "8.55.0",
+    "esno": "^4.7.0",
     "husky": "^9.1.5",
+    "less": "^4.2.0",
     "lint-staged": "^15.2.9",
     "typescript": "^5.5.3",
     "vite": "^5.4.1",
