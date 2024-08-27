@@ -1,0 +1,27 @@
+@import '../../style/index.less';
+
+.spurs-table{
+  &-ceil{
+    padding: 16px;
+    border-bottom:1px solid #f0f0f0;
+  }
+
+  &-header{
+    box-sizing: border-box;
+
+    &-ceil{
+      position: relative;
+      background: #fafafa;
+
+      &::before{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 1px;
+        background: #f0f0f0;
+        transform: translateY(-50%);
+        height: 1.5em;
+      }
+    }
+  }
+}
