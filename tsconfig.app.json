@@ -12,6 +12,12 @@
     "paths": {
       "@spurs-ui/utils": [
         "packages/utils/src"
+      ],
+      "spurs-ui": [
+        "packages/spurs-ui/src"
+      ],
+      "spurs-ui/*": [
+        "packages/spurs-ui/src/*"
       ]
     },
     "allowImportingTsExtensions": true,
@@ -26,5 +32,9 @@
     "skipLibCheck": true,
     "baseURl": "."
   },
+  "reference": [
+    { "path": "./tsconfig.node.json" },
+    { "path": "./tsconfig.vitepress.json" }
+  ],
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
 }

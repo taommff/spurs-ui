@@ -1,0 +1,84 @@
+@import '../../style/index.less';
+
+.spurs-button{
+  background: none;
+  cursor: pointer;
+  border: 1px solid var(--spurs-color-border);
+  outline: none;
+  color: inherit;
+  padding: 4px 8px;
+  border-radius: 4px;
+  height: 32px;
+  font-size: 16px;
+  margin: 8px;
+  display: inline-flex;
+  align-items: center;
+
+  &-size{
+    &--small{
+      height: 24px;
+      padding: 2px 4px;
+      font-size: 12px;
+    }
+    &--large{
+      height: 40px;
+      padding: 6px 12px;
+      font-size: 20px;
+    }
+  }
+
+  // 定义默认样式
+  &--default{
+    border-color:var(--spurs-color-border);
+    color: var(--spurs-color-text);
+
+    &:hover{
+      border-color:var(--spurs-color-primary-hover);
+      color: var(--spurs-color-primary-hover);
+    }
+
+    &:active{
+      border-color:var(--spurs-color-primary-active);
+      color: var(--spurs-color-primary-active);
+    }
+  }
+
+  &--dashed{
+    border-style: dashed;
+    border-color:var(--spurs-color-border);
+    color: var(--spurs-color-text);
+
+    &:hover{
+      border-color:var(--spurs-color-primary-hover);
+      color: var(--spurs-color-primary-hover);
+    }
+
+    &:active{
+      border-color:var(--spurs-color-primary-active);
+      color: var(--spurs-color-primary-active);
+    }
+  }
+
+  &--primary{
+    border-color:var(--spurs-color-primary);
+    color: white;
+    background-color: var(--spurs-color-primary);
+
+    &:hover{
+      border-color:var(--spurs-color-primary-hover);
+      background-color: var(--spurs-color-primary-hover);
+    }
+
+    &:active{
+      border-color:var(--spurs-color-primary-active);
+      background-color: var(--spurs-color-primary-active);
+    }
+  }
+
+  &:disabled{
+    cursor: not-allowed;
+    border-color: #d9d9d9;
+    color: #bfbfbf;
+    background-color: #f0f0f0;
+  }
+}

@@ -1,8 +1,8 @@
 <docs>
 ---
-title: 基础使用
+title: 禁用按钮
 ---
-这是一个`button`简单案例
+设置`disabled`属性为`true`即可禁用按钮
 </docs>
 
 <script setup lang="ts">
@@ -13,13 +13,13 @@ function handleClick() {
 
 <template>
   <div>
-    <TButton @click="handleClick">
+    <TButton disabled @click="handleClick">
       按钮1
     </TButton>
-    <TButton type="dashed" @click="handleClick">
+    <TButton disabled type="dashed" @click="handleClick">
       按钮2
     </TButton>
-    <TButton type="primary" @click="handleClick">
+    <TButton disabled type="primary" @click="handleClick">
       按钮3
     </TButton>
   </div>
