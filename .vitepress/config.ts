@@ -20,6 +20,12 @@ export default defineConfig({
           link: '/components/button/',
         },
       ],
+      '/utils/': [
+        {
+          text: 'genClass',
+          link: '/utils/gen-class',
+        },
+      ],
     },
 
     socialLinks: [
@@ -29,5 +35,6 @@ export default defineConfig({
   rewrites: {
     'docs/(.*)': '(.*)',
     'packages/spurs-ui/src/:comp/(.*)': 'components/:comp/(.*)',
+    'packages/utils/src/(.*)': 'utils/(.*)',
   },
 })
