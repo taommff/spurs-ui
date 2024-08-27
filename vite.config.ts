@@ -15,6 +15,10 @@ export default defineConfig({
   resolve: {
     alias: [
       {
+        find: /^spurs-ui/,
+        replacement: path.resolve(baseURl, 'packages/spurs-ui/src'),
+      },
+      {
         find: /^@spurs-ui\/utils/,
         replacement: path.resolve(baseURl, 'packages/utils/src'),
       },

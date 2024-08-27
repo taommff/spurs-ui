@@ -1,3 +1,1 @@
-export function test() {
-  console.log('蔡徐淳')
-}
+export { useClassnames } from './gen-class.ts'

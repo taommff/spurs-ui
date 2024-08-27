@@ -1,0 +1,9 @@
+{
+  "extends": ["../../tsconfig.app.json", "../../tsconfig.json"],
+  "include": [
+    ".vitepress/**/*.ts",
+    ".vitepress/**/*.tsx",
+    ".vitepress/**/*.vue",
+    ".vitepress/**/*.js"
+  ]
+}

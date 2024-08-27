@@ -11,15 +11,16 @@ export function useClassnames(componentName: string) {
     if (arg.length >= 1) {
       return arg.reduce((prev, cur) => {
         if (Array.isArray(cur)) {
+          const arg1 = cur[0]
           const arg2 = cur[1]
           if (arg2 === 'E')
-            return `${prev}__${cur}`
+            return `${prev}__${arg1}`
 
           else if (arg2 === 'M')
-            return `${prev}--${cur}`
+            return `${prev}--${arg1}`
         }
         return `${prev}-${cur}`
-      }, componentClass)
+      }, componentClass) as string
     }
     return componentClass
   }
