@@ -39,6 +39,10 @@ export default defineConfig({
           text: '通知',
           link: '/components/notification/',
         },
+        {
+          text: '图标',
+          link: '/components/icons/',
+        },
       ],
       '/utils/': [
         {
@@ -56,5 +60,6 @@ export default defineConfig({
     'docs/(.*)': '(.*)',
     'packages/spurs-ui/src/:comp/(.*)': 'components/:comp/(.*)',
     'packages/utils/src/(.*)': 'utils/(.*)',
+    'packages/icons/docs/(.*)': 'components/icons/(.*)',
   },
 })
