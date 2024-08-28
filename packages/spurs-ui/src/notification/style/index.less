@@ -1,0 +1,42 @@
+@import '../../style/index.less';
+
+.spurs-notification{
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  min-width: 58px;
+  right: 20px;
+
+  &-wrapper{
+    background: #f0f0f0;
+    margin-top: 15px;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 8px;
+    width: 384px;
+
+    &-title{
+      font-size: 16px;
+      margin-bottom: 8px;
+
+    }
+
+    &-content{
+      font-size: 14px;
+    }
+  }
+}
+
+.spurs-slide-right-move, .spurs-slide-right-enter-active, .spurs-slide-right-leave-active{
+ transition: all 0.8s; 
+}
+
+.spurs-slide-right-enter-from, .spurs-slide-right-leave-to{
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.spurs-slide-right-leave-active{
+  position: absolute;
+}
