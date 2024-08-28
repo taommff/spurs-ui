@@ -27,6 +27,10 @@ export default defineConfig({
           text: 'Tooltip',
           link: '/components/tooltip/',
         },
+        {
+          text: '表格',
+          link: '/components/table/',
+        },
       ],
       '/utils/': [
         {
