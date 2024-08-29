@@ -1,15 +1,30 @@
 {
   "name": "@spurs-ui/utils",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
-  "author": "",
-  "license": "ISC",
+  "author": "wembanyami <1005268840@qq.com>",
+  "license": "MIT",
   "keywords": [],
-  "main": "index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "dist/index.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "unbuild"
+  },
+  "peerDependencies": {
+    "vue": ">=3.0.0"
   },
   "dependencies": {
     "classnames": "^2.5.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
