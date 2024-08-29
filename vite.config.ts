@@ -26,6 +26,10 @@ export default defineConfig({
         find: /^@spurs-ui\/utils/,
         replacement: path.resolve(baseURl, 'packages/utils/src'),
       },
+      {
+        find: /^@spurs-ui\/icons/,
+        replacement: path.resolve(baseURl, 'packages/icons/src'),
+      },
     ],
   },
 })

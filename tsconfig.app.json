@@ -13,6 +13,9 @@
       "@spurs-ui/utils": [
         "packages/utils/src"
       ],
+      "@spurs-ui/icons": [
+        "packages/icons/src"
+      ],
       "spurs-ui": [
         "packages/spurs-ui/src"
       ],
