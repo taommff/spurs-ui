@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'Spurs UI',
-  description: 'This is a vue component libs',
+  description: '一个基于Vue3的组件库(GSG)',
   // eslint-disable-next-line node/prefer-global/process
   base: process.env.NODE_ENV === 'production' ? '/spurs-ui/' : '/',
   themeConfig: {
