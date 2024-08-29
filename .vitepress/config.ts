@@ -4,6 +4,8 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'Spurs UI',
   description: 'This is a vue component libs',
+  // eslint-disable-next-line node/prefer-global/process
+  base: process.env.NODE_ENV === 'production' ? '/spurs-ui/' : '/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
