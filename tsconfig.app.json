@@ -23,6 +23,9 @@
         "packages/spurs-ui/src/*"
       ]
     },
+    "types": [
+      "vitest/globals"
+    ],
     "allowImportingTsExtensions": true,
 
     /* Linting */
@@ -35,9 +38,11 @@
     "skipLibCheck": true,
     "baseURl": "."
   },
+
   "reference": [
     { "path": "./tsconfig.node.json" },
     { "path": "./tsconfig.vitepress.json" }
   ],
+
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
