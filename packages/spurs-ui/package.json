@@ -1,16 +1,33 @@
 {
   "name": "spurs-ui",
+  "type": "module",
   "version": "1.0.0",
-  "description": "",
-  "author": "",
-  "license": "ISC",
-  "keywords": [],
-  "main": "index.js",
+  "description": "这是一个基于vue3的UI组件库",
+  "author": "wembanyami <1005268840@qq.com>",
+  "license": "MIT",
+  "keywords": ["vue", "vue3", "typescript", "components"],
+  "exports": {
+    ".": {
+      "import": "./es/index.js",
+      "require": "./lib/index.js"
+    },
+    "./es/*": "./es/*",
+    "./dist/*": "./dist/*",
+    "./lib/*": "./lib/*",
+    "./package.json": "./package.json"
+  },
+  "main": "es/index.js",
+  "files": [
+    "dist", "es", "lib"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "vite build",
+    "build:umd": "vite build --config vite.umd.config.ts",
+    "build:style": "vite build --config vite.style.config.ts"
   },
   "dependencies": {
     "@floating-ui/vue": "^1.1.4",
+    "@spurs-ui/utils": "workspace:*",
     "@v-c/utils": "^0.0.26",
     "lodash-es": "^4.17.21"
   },

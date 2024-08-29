@@ -4,7 +4,8 @@ import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
 import { AntdTheme } from 'vite-plugin-vitepress-demo/theme'
-import spurs from 'spurs-ui'
+
+// import spurs from 'spurs-ui'
 import 'spurs-ui/style.ts'
 
 export default {
@@ -17,6 +18,6 @@ export default {
   enhanceApp({ app }) {
     // ...
     app.component('Demo', AntdTheme)
-    app.use(spurs)
+    // app.use(spurs)
   },
 } satisfies Theme
