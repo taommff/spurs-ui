@@ -6,6 +6,7 @@
   "author": "wembanyami <1005268840@qq.com>",
   "license": "MIT",
   "keywords": ["vue", "vue3", "icons"],
+  "publishConfig": { "access": "public" },
   "exports": {
     ".": {
       "import": "./es/index.js",
